@@ -1,6 +1,8 @@
 # NgNorthwind
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+LA PRIMERA VEZ QUE SE CLONE EL REPO ES NECESARIO USAR EL COMANDO npm i PARA QUE SE INSTALEN LOS MODULOS
+
 
 ## Development server
 
