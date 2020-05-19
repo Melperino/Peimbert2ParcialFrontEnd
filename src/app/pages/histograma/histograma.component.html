@@ -1,0 +1,26 @@
+<ng-select class="m-5" 
+           [items]="defaultBindingsListDim"
+           [clearable]="false"
+           (change)="onChangeDimension($event)"
+           [(ngModel)]="selectedDimension">
+</ng-select>
+<ng-select class="m-5"
+    [items]="customer"
+    [multiple]="true"
+    [closeOnSelect]="true"
+    [searchable]="true"
+    placeholder="Seleccione una opción de la lista..."
+    (change)="onChangeValues()"
+    [(ngModel)]="selectedCustomer">
+</ng-select>
+<ng-select class="m-5" 
+           [items]="defaultBindingsList"
+           [clearable]="false"
+           (change)="onChangeYear($event)"
+           [(ngModel)]="selectedYear">
+</ng-select> 
+<!--app-bar-chart 
+    titulo="Serie Histórica de Ventas por Año y Por Cliente"
+    [barChartLabels]="barChartLabels"
+    [barChartData]="barChartData">
+</app-bar-chart--> 

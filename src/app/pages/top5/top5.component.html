@@ -1,0 +1,30 @@
+<ng-select class="m-5" 
+           [items]="defaultBindingsList"
+           [clearable]="false"
+           (change)="onChangeDimension($event)"
+           [(ngModel)]="selectedDimension">
+</ng-select>
+
+<ng-select class="m-5"
+    [items]="customer$"
+    [closeOnSelect]="true"
+    [searchable]="true"
+    placeholder="Seleccione una opción de la lista..."
+    (change)="onChangeValues()"
+    [(ngModel)]="selectedCustomer">
+</ng-select>
+
+<ng-select class="m-5" 
+           [items]="defaultBindingsListMonth"
+           [clearable]="false"
+           (change)="onChangeMonth()"
+           [(ngModel)]="selectedMonth">
+</ng-select> 
+<div class="mt-3">
+    <button (click)="clearModel()" class="btn btn-secondary btn-sm">Clear model</button>
+</div>
+
+<app-pie-chart
+    [pieChartData]="dataValues"
+    [pieChartLabels]="dataDimension">
+</app-pie-chart>
