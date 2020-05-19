@@ -3,6 +3,7 @@ import { PieChartComponent } from './components/charts/pie-chart/pie-chart.compo
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { Top5Component } from './pages/top5/top5.component';
 import { AppComponent } from './app.component';
+import { HistogramaComponent } from './pages/histograma/histograma.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,6 @@ import { ChartsModule } from 'ng2-charts';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
-import { HistogramaComponent } from './pages/histograma/histograma.component';
 
 @NgModule({
   declarations: [

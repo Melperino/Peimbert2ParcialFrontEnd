@@ -53,7 +53,9 @@ export class Top5Component implements OnInit {
   }
 
   onChangeMonth() {
-    this.getPieData();
+    if (this.selectedCustomer != null) {
+      this.getPieData();
+    }
   }
 
   onChangeValues() {
@@ -73,7 +75,11 @@ export class Top5Component implements OnInit {
     .subscribe((result: any) => {
       console.log(result);
       this.dataDimension = result.pieChartLabels;
+      if (result.pie[0] === undefined) {
+        console.log('No tiene ventas');
+    } else {
       this.dataValues = result.pie[0];
+    }
       console.log(this.dataDimension);
       console.log(this.dataValues);
     });
